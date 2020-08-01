@@ -8,7 +8,9 @@ const ImageGrid = () => {
     <div className="img-grid">
       {docs &&
         docs.map((doc) => (
-          <img src={doc.url} key={doc.id} alt="uploaded pic" />
+          <div className="img-wrap" key={doc.id}>
+            <img src={doc.url} alt="uploaded pic" />
+          </div>
         ))}
     </div>
   );
